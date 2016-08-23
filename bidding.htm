@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!--
+	Student ID: 4974948
+	Student Name: Mohammad Khan
+	
+	This page takes bidding details from the user, or buy now
+-->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset=utf-8" />
+	<title>ShopOnline - Bidding Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src = "bidding.js"></script>
+</head>
+
+<body>
+    <center>
+		<h1 id="heading">ShopOnline</h1>
+		<table border=0>
+
+		<tr height=40px></tr><tr></tr>
+		<tr><td width=40px>
+		</td><td><a href="login.htm" class="myButton">Home</a></td><td>&nbsp;</td>
+		<td><a href="listing.htm" class="myButton">Listing</a></td><td>&nbsp;</td>
+		<td><a href="bidding.htm" class="myButton">Bidding</a></td><td>&nbsp;</td>
+		<td><a href="maintenance.htm" class="myButton">Maintenance</a></td><td>&nbsp;</td>
+		<td><a href="log_out.php" class="myButton">Logout</a></td><td>&nbsp;</td>
+		</tr>
+		</table>
+		<br/><br/><br/>
+        
+        <div style="font-style: italic;">Following are the auctions item. To bid for an item use the "Place Bid" button.<br />
+        <b>Note: </b>Items' remaining time and bid prices are updated updated every 5 seconds</div>
+        <br/><br/>
+		<div id="div_auction_items"></div>
+    </center>
+</body>
+</html>

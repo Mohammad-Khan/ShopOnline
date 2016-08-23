@@ -1,0 +1,72 @@
+<!--
+	Student ID: 4974948
+	Student Name: Mohammad Khan
+	
+	Listing page, This page is responsible for taking listing details 
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="jquery.js"></script>
+	<title>ShopOnline -  Listing Page</title>
+	<script type="text/javascript" src = "listing.js"></script>
+</head>
+
+<body>
+    <center>
+		<h1 id="heading">ShopOnline</h1>
+		<table border=0>
+		<tr height=40px></tr><tr></tr>
+		<tr><td width=40px>
+		</td><td><a href="login.htm" class="myButton">Home</a></td><td>&nbsp;</td>
+		<td><a href="listing.htm" class="myButton">Listing</a></td><td>&nbsp;</td>
+		<td><a href="bidding.htm" class="myButton">Bidding</a></td><td>&nbsp;</td>
+		<td><a href="maintenance.htm" class="myButton">Maintenance</a></td><td>&nbsp;</td>
+		<td><a href="log_out.php" class="myButton">Logout</a></td><td>&nbsp;</td>
+		</tr>
+		</table>
+		<br/><br/><br/>
+
+        <form method="post" id="frm" onsubmit="return submitform()">
+            <fieldset style="width:40%">
+                <legend>Listing</legend>
+                <div align="left"><span class="required">*</span> Required fields</div><br/><br/>
+                <label>Name<span class="required">*</span> :</label>
+				<input type="text" name="name" id="name"/><br/><br/>
+				<label>Category <span class="required">*</span> :</label>
+				<select name="category" id="slct_cat" onchange="other_categorie(this.value)">
+					<option value="">Select</option>
+                    <option value="Electronics">Electronics</option>
+					<option value="Mobile Phone">Mobile Phone</option>
+					<option value="Car">Cars</option>
+                    <option value="other">Other</option>
+                </select><br/><br/>
+                <input type="text" name="other_category" id="other_category" style="display:none"/><br/>
+				<label>Description <span class="required">*</span>:</label>
+				<input type="text" name="description" id="description" /><br/><br/>
+				<label>Start price<span class="required">*</span> :</label>
+				<input type="text" name="start_price" id="start_price"  /><br/><br/>
+				<label>Reserve price <span class="required">*</span> :</label>
+				<input type="text" name="reserve_price" id="reserve_price" /><br/><br/>
+                <label>Buy it now price <span class="required">*</span> :</label>
+				<input type="text" name="buy_now_price" id="buy_now_price" /><br/><br/>
+				<label>Duration <span class="required">*</span> :</label>
+				<select name="day" id="day">
+                    <option value="">Day</option>
+                </select>
+                <select name="hour" id="hour">
+                    <option value="">Hour</option>
+                </select>
+				<select name="minute" id="minute">
+                    <option value="">Min</option>
+                </select><br/><br/>
+				<input type="submit" name="submit" value="Submit" /> <br/><br/>
+				<div id="err_msg" class="box_error_message"></div>
+            </fieldset>
+        </form>
+		<div id="div_succ" style="display: none;"></div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/*
+	Student ID: 4974948
+	Student Name: Mohammad Khan
+
+	This is a Styling File, It Contains the CSS code to edit pages style
+*/
+
+
+.myButton {
+	background-color:#44c767;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:11px 56px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#2d9423;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+#heading{
+	font-weight:bold;
+    color: #black;
+    font-family: Arial;
+}
+fieldset{
+    border: 2px solid #black;
+}
+#menu{
+	border-bottom: 2px solid #ababab;
+    padding: 15px;
+    margin: 25px 0 25px 0;
+}
+#menu  a{
+    margin: 0 22px 0 0;
+    padding: 5px;
+    text-decoration: underline;
+	color:black;
+}
+
+
+.required{
+    font-weight: bold;
+    color: red;
+}
+legend{
+    font-weight: bold;
+}
+.box_error_message
+{
+	font-weight: bold;
+    color:red;
+}
+
+
+

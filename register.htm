@@ -1,0 +1,52 @@
+<!--
+	Student ID: 4974948
+	Student Name: Mohammad Khan
+
+	This is the customer registration page, it takes registration details from the new customer.
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="register.js"></script> 
+	<title>ShopOnline - Customer Registration</title>
+
+</head>
+
+<body>
+    <center>
+		<h1 id="heading">ShopOnline</h1>
+		<table border=0>
+			<tr height=40px></tr><tr></tr>
+			<tr>
+				<td width=40px></td><td><a href="login.htm" class="myButton">Home</a></td><td>&nbsp;</td>
+				<td><a href="listing.htm" class="myButton">Listing</a></td><td>&nbsp;</td>
+				<td><a href="bidding.htm" class="myButton">Bidding</a></td><td>&nbsp;</td>
+				<td><a href="maintenance.htm" class="myButton">Maintenance</a></td><td>&nbsp;</td>
+				<td><a href="log_out.php" class="myButton">Logout</a></td><td>&nbsp;</td>
+			</tr>
+		</table>
+		<br/><br/><br/>
+
+	
+
+		<form method="post"  id="register_form" onsubmit="return submitform()">
+			<fieldset style="width:40%">
+				<legend>Registration Details</legend>
+				<div align="left"><span class="required">*</span> Required fields</div>
+				<label for="fname">First Name <span class="required">*</span> :</label>
+				<input type="text" name="fname" id="fname" /><br/><br/>
+				<label for="lname">Last name <span class="required">*</span> :</label>
+				<input type="text" name="lname" id="surname" /><br/><br/>
+				<label for="email">Email-id <span class="required">*</span> :</label>
+				<input type="email" name="email" id="email" /><br/><br/>
+				<input type="hidden" name="password" id="password" value ="dummy"  /><br/>
+				<input type="hidden" name="re_password" id="re_password" value="dummy" /><br/>
+				<button type="submit" name="submit" value="Register">Register</button><br/>
+				<div id="err_msg" class="box_error_message"></div><br/>
+			</fieldset>
+		<h3>Already registered? Please click <a href="login.htm">here</a> to login</h3>
+	</center>
+</body>
+</html>
