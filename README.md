@@ -1,6 +1,6 @@
 # ShopOnline
 
-PROJECT TITLE: club-court-booking-system
+PROJECT TITLE: ShopOnline
 PURPOSE OF PROJECT: practicing Ajax Techniques (JavaScript/HTML, DOM, XML, XMLHttpRequest, and XPath/XSLT) and PHP
 AUTHORS: Mohammad Khan
 
